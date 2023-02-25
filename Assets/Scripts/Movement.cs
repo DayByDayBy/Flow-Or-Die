@@ -8,7 +8,8 @@ public class Movement : MonoBehaviour
 
     public float moveSpeed;
     public Rigidbody2D Rigidbody;
-    private Vector2 moveInput;
+    public Vector2 moveInput;
+    
 
 
     // Start is called before the first frame update
@@ -18,7 +19,7 @@ public class Movement : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    public void Update()
     {
         moveInput.x = Input.GetAxisRaw("Horizontal");
         moveInput.y = Input.GetAxisRaw("Vertical");
@@ -26,6 +27,10 @@ public class Movement : MonoBehaviour
         moveInput.Normalize();
 
         Rigidbody.velocity = moveInput * moveSpeed;
+    
+
+        
+        
 
     }
 }
