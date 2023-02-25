@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class Damagable : MonoBehaviour
+public class Damage : MonoBehaviour
 {
     private float health; // current health of the object
     private float maxHealth; // maximum health of the object
     private float damagePerSecond; // amount of damage the object takes per second
 
-    public Damagable(float startingHealth, float maxHealth, float damagePerSecond)
+    public Damage(float startingHealth, float maxHealth, float damagePerSecond)
     {
         this.health = startingHealth;
         this.maxHealth = maxHealth;

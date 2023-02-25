@@ -123,6 +123,37 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &197768187 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9002753728139551510, guid: 6a84f38a1d8488446977d0814bcd4d88, type: 3}
+  m_PrefabInstance: {fileID: 4360886848158630281}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &197768188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197768187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a70f51eaf3cb84833904940dd49cb461, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBarImage: {fileID: 0}
+  player: {fileID: 0}
+--- !u!114 &197768189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197768187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c7ff93730ee74c758054d3306e60e58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &304850176
 GameObject:
   m_ObjectHideFlags: 0
@@ -323,8 +354,8 @@ GameObject:
   - component: {fileID: 439934204}
   - component: {fileID: 439934203}
   - component: {fileID: 439934202}
-  - component: {fileID: 439934207}
   - component: {fileID: 439934206}
+  - component: {fileID: 439934207}
   m_Layer: 0
   m_Name: Square
   m_TagString: Untagged
@@ -356,7 +387,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97e84c1c3e354734d9c21cdd7511e1b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 0}
 --- !u!212 &439934204
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -395,8 +425,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1296277197
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
   m_Color: {r: 0.23430611, g: 0.8396226, b: 0.14574578, a: 1}
@@ -417,7 +447,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 439934201}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.35, y: -3.5, z: 0}
+  m_LocalPosition: {x: -1.84, y: -3.55, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -458,7 +488,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.21133333}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -593,7 +623,7 @@ GameObject:
   - component: {fileID: 546126887}
   - component: {fileID: 546126886}
   m_Layer: 0
-  m_Name: Square (1)
+  m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

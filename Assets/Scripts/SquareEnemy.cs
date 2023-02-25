@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UpDown : MonoBehaviour
+public class SquareEnemy : MonoBehaviour
 {
     private Rigidbody2D rb;
 
