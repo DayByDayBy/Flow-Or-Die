@@ -7,7 +7,7 @@ public class Movement : MonoBehaviour
 {
 
     public float moveSpeed;
-    public Rigidbody2D rigidBody;
+    public Rigidbody2D Rigidbody;
     private Vector2 moveInput;
 
 
@@ -25,7 +25,7 @@ public class Movement : MonoBehaviour
 
         moveInput.Normalize();
 
-        rigidBody.velocity = moveInput * moveSpeed;
+        Rigidbody.velocity = moveInput * moveSpeed;
 
     }
 }
