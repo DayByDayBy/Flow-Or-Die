@@ -21,7 +21,7 @@ public class KillPlayer : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Enemy"))
         {
-            SceneManager.LoadScene("Game Over");
+            SceneManager.LoadScene("GameOver");
         }
     }
 
