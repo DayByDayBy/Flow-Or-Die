@@ -9,4 +9,6 @@ public class HealthBar : MonoBehaviour
     {
         healthBarImage.fillAmount = Mathf.Clamp(player.currentHealth/ player.maxHealth, 0, 100f);
     }
+
+
 }
