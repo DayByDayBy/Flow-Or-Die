@@ -6,6 +6,8 @@ public class Damageable : MonoBehaviour
     public float maxHealth = 100f;
     public float damagePerSecond = 10f;
     public Movement script;
+    public Animator animator;
+   
 
     //private Damagable damagable;
 
@@ -23,6 +25,13 @@ public class Damageable : MonoBehaviour
         {
             // Simulate a fixed time step of 1 second
             currentHealth -= damagePerSecond * Time.deltaTime;
+            
+            animator.SetBool("isRunning", false);
+        }
+       else
+        {
+            
+            animator.SetBool("isRunning", true);
         }
 
         // Take damage over time
