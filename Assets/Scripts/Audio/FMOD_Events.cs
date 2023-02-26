@@ -16,15 +16,10 @@ public class FMOD_Events : MonoBehaviour
     [field: Header("Ambience")]
 
     [field: SerializeField] public EventReference ambience { get; private set; }
-
-    //music
-
-    [field: Header("Music")]
-
-    [field: SerializeField] public EventReference Music { get; private set; }
+    
 
 
-    public static FMOD_Events instance { get; private set; }
+     public static FMOD_Events instance { get; private set; }
 
     private void Awake()
     {
