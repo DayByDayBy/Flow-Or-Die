@@ -18,7 +18,6 @@ public class Damage : MonoBehaviour
 
     public void TakeDamageOverTime(float deltaTime)
     {
-
         float damage = damagePerSecond * deltaTime;
 
         health -= damage;

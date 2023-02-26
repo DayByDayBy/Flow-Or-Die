@@ -11,15 +11,46 @@ public class FMOD_Events : MonoBehaviour
 
     [field: SerializeField] public EventReference Footsteps { get; private set; }
 
+    [field: Header("HeartBeat")]
+
+    [field: SerializeField] public EventReference HeartBeat { get; private set; }
+
+    [field: Header("Death")]
+
+    [field: SerializeField] public EventReference Death { get; private set; }
+
     //Ambience 
 
     [field: Header("Ambience")]
 
     [field: SerializeField] public EventReference ambience { get; private set; }
-    
+
+    //Music
+
+    [field: Header("Music")]
+
+    [field: SerializeField] public EventReference Music { get; private set; }
+
+   
+    //Enemy
 
 
-     public static FMOD_Events instance { get; private set; }
+    [field: Header("Swisher")]
+
+    [field: SerializeField] public EventReference Swisher { get; private set; }
+
+    [field: Header("Bounce")]
+
+    [field: SerializeField] public EventReference Bounce { get; private set; }
+
+    [field: Header("EnemyNoise")]
+
+    [field: SerializeField] public EventReference EnemyNoise { get; private set;}
+
+
+
+
+public static FMOD_Events instance { get; private set; }
 
     private void Awake()
     {

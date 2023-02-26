@@ -21,6 +21,7 @@ public class KillPlayer : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Enemy"))
         {
+            AudioManager.instance.PlayOneShot(FMOD_Events.instance.Death, this.transform.position);
             SceneManager.LoadScene("GameOver");
         }
     }
