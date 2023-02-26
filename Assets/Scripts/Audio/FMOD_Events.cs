@@ -11,6 +11,14 @@ public class FMOD_Events : MonoBehaviour
 
     [field: SerializeField] public EventReference Footsteps { get; private set; }
 
+    [field: Header("Death")]
+
+    [field: SerializeField] public EventReference Death { get; private set; }
+
+    [field: Header("HeartBeat")]
+
+    [field: SerializeField] public EventReference HeartBeat { get; private set; }
+
     //Ambience 
 
     [field: Header("Ambience")]
@@ -22,6 +30,21 @@ public class FMOD_Events : MonoBehaviour
     [field: Header("Music")]
 
     [field: SerializeField] public EventReference Music { get; private set; }
+
+    //enemy
+
+
+    [field: Header("Swish")]
+
+    [field: SerializeField] public EventReference Swish  { get; private set; }
+    
+    [field: Header("Bounce")]
+
+    [field: SerializeField] public EventReference Bounce { get; private set; }
+
+    [field: Header("EnemySpeak")]
+
+    [field: SerializeField] public EventReference EnemySpeak { get; private set; }
 
 
     public static FMOD_Events instance { get; private set; }
