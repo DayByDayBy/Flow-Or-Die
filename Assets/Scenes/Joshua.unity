@@ -176,7 +176,7 @@ Animator:
   m_GameObject: {fileID: 197768187}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4f1009f9ce8533046a6132d8b1bf0c2a, type: 2}
+  m_Controller: {fileID: 9100000, guid: d67d3e654e918ca469dc2083d559ed0b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -201,7 +201,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 10.24
+  m_Radius: 5.622444
 --- !u!212 &197768205
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -243,7 +243,7 @@ SpriteRenderer:
   m_SortingLayerID: 1296277197
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 5494d2ae51838084da147258f5966c23, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8665f9a9744beb74f82611db63522b5a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -589,7 +589,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.19516802, y: -0.5630517}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -600,7 +600,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 9.977784, y: 6.6303015}
   m_EdgeRadius: 0
 --- !u!95 &439934208
 Animator:
@@ -612,7 +612,7 @@ Animator:
   m_GameObject: {fileID: 439934201}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: d67d3e654e918ca469dc2083d559ed0b, type: 2}
+  m_Controller: {fileID: 9100000, guid: 07fd6a6fb28aa03438e8b5346ffd318f, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -914,9 +914,10 @@ GameObject:
   - component: {fileID: 951288042}
   - component: {fileID: 951288041}
   - component: {fileID: 951288045}
+  - component: {fileID: 951288047}
   - component: {fileID: 951288046}
   m_Layer: 0
-  m_Name: Circle
+  m_Name: Bird
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -996,8 +997,8 @@ SpriteRenderer:
   m_SortingLayerID: 1296277197
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.9150943, g: 0.3056069, b: 0.3056069, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 8d7bf506c8f756741bdde5ed32e94980, type: 3}
+  m_Color: {r: 0.9811321, g: 0.9811321, b: 0.9811321, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1015,8 +1016,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 951288040}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.43, y: -1.3, z: 0}
-  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
+  m_LocalPosition: {x: -3.8, y: -2.6641, z: 0}
+  m_LocalScale: {x: 0.08974213, y: 0.07389264, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1034,7 +1035,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ce6478a0ddc1354bb7091262f61d137, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!58 &951288046
+--- !u!95 &951288046
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 951288040}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9e93989c22b0f224aba255af1854b909, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+--- !u!58 &951288047
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1047,9 +1068,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.68228865, y: -0.8080831}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 4.7817335
 --- !u!1 &1074326766
 GameObject:
   m_ObjectHideFlags: 0
@@ -1601,19 +1622,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4360886847531174425, guid: 6a84f38a1d8488446977d0814bcd4d88, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 21.3069
+      value: 20.7297
       objectReference: {fileID: 0}
     - target: {fileID: 4360886847531174425, guid: 6a84f38a1d8488446977d0814bcd4d88, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 19.6884
+      value: 20.2656
       objectReference: {fileID: 0}
     - target: {fileID: 4360886847531174425, guid: 6a84f38a1d8488446977d0814bcd4d88, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.05
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 4360886847531174425, guid: 6a84f38a1d8488446977d0814bcd4d88, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.05
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 4360886847531174425, guid: 6a84f38a1d8488446977d0814bcd4d88, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1645,11 +1666,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4360886847531174425, guid: 6a84f38a1d8488446977d0814bcd4d88, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 4.8243
+      value: 4.8099
       objectReference: {fileID: 0}
     - target: {fileID: 4360886847531174425, guid: 6a84f38a1d8488446977d0814bcd4d88, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -3.1066
+      value: -3.0931
       objectReference: {fileID: 0}
     - target: {fileID: 4360886847531174425, guid: 6a84f38a1d8488446977d0814bcd4d88, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1663,6 +1684,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4360886847531174427, guid: 6a84f38a1d8488446977d0814bcd4d88, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 197768197}
     - target: {fileID: 9002753728139551510, guid: 6a84f38a1d8488446977d0814bcd4d88, type: 3}
       propertyPath: m_Name
       value: Player
